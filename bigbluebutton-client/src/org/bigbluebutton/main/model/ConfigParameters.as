@@ -110,7 +110,8 @@ package org.bigbluebutton.main.model
 			
 			if (xml.skinning.@enabled == "true") skinning = xml.skinning.@url;
 
-			if (xml.debug.@showDebugWindow == "true") showDebug = true;
+			showDebug = true;
+			//if (xml.debug.@showDebugWindow == "true") showDebug = true;
 		}
 		
 		public function getModulesXML():XMLList{

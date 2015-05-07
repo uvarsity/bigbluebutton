@@ -1,0 +1,13 @@
+
+location /client/BigBlueButton.html {
+    root /root/Dropbox/bigbluebutton/bigbluebutton-client;
+    index index.html index.htm;
+    expires 1m;
+}
+
+# BigBlueButton Flash client.
+location /client {
+    root /root/Dropbox/bigbluebutton/bigbluebutton-client;
+    index index.html index.htm;
+}
+

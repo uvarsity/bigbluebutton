@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testrun name="" >
+<testsuite  name="Default Test Suite" project="z-bbb-client">
+<testsuite name="tests.main.modules.tests:ModuleManagerTest" type="testsuiteclass"/>
+<testsuite name="tests.main.users.tests:JoinServiceTest" type="testsuiteclass"/>
+<testsuite name="tests.main.users.tests:UserServiceTest" type="testsuiteclass"/>
+<testsuite name="tests.main.modules.tests:ConfigXMLTest" type="testsuiteclass"/>
+<testsuite name="tests.main.modules.tests:DependencyResolverTest" type="testsuiteclass"/>
+<testsuite name="tests.main.modules.tests:ModuleDescriptorTest" type="testsuiteclass"/>
+<testsuite name="tests.main.modules.tests:PortsProxyTest" type="testsuiteclass"/>
+<testsuite name="tests.main.users:UsersTestSuite" type="testcaseclass"/>
+<testsuite name="tests.main.modules:ModulesTestSuite" type="testcaseclass"/>
+<testsuite name="tests:BBBTestSuite" type="testcaseclass"/>
+</testsuite>
+<portNumber value="8765" />
+</testrun>

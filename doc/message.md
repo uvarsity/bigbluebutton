@@ -1090,7 +1090,7 @@
                         "heightRatio": 100
                     }
                 ],
-                "name": "default.pdf",
+                "name": "defaul.pdf",
                 "current": true
             }
         ],

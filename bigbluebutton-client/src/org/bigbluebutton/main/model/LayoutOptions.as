@@ -39,9 +39,7 @@ package org.bigbluebutton.main.model
 		public function parseOptions():void {
 			var vxml:XML = BBB.initConfigManager().config.layout;
 			if (vxml != null) {
-				if (vxml.@showDebugWindow != undefined) {
-					showDebugWindow = (vxml.@showDebugWindow.toString().toUpperCase() == "TRUE") ? true : false;
-				}
+				showDebugWindow = true;
 
 				if (vxml.@showLogButton != undefined) {
 					showLogButton = (vxml.@showLogButton.toString().toUpperCase() == "TRUE") ? true : false;
