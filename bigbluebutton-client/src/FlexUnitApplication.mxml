@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- This is an auto generated file and is not intended for modification. -->
+
+<mx:Application xmlns:mx="http://www.adobe.com/2006/mxml"
+				xmlns:flexui="flexunit.flexui.*"
+				minWidth="955" minHeight="600" creationComplete="onCreationComplete()"
+				layout="absolute">
+	<mx:Script>
+		<![CDATA[
+			import org.hamcrest.mxml.collection.Array;
+			import tests.main.modules.tests.PortsProxyTest;
+			import tests.main.modules.tests.ModuleDescriptorTest;
+			import tests.main.modules.tests.DependencyResolverTest;
+			import tests.main.modules.tests.ConfigXMLTest;
+			import tests.main.users.tests.UserServiceTest;
+			import tests.main.users.tests.JoinServiceTest;
+			import tests.main.modules.tests.ModuleManagerTest;
+			import tests.BBBTestSuite;
+			import tests.main.modules.ModulesTestSuite;
+			import tests.main.users.UsersTestSuite;
+			
+			public function currentRunTestSuite():Array
+			{
+				var testsToRun:Array = new Array();
+				testsToRun.push(tests.main.users.UsersTestSuite);
+				testsToRun.push(tests.main.modules.ModulesTestSuite);
+				testsToRun.push(tests.BBBTestSuite);
+				testsToRun.push(tests.main.modules.tests.ModuleManagerTest);
+				testsToRun.push(tests.main.users.tests.JoinServiceTest);
+				testsToRun.push(tests.main.users.tests.UserServiceTest);
+				testsToRun.push(tests.main.modules.tests.ConfigXMLTest);
+				testsToRun.push(tests.main.modules.tests.DependencyResolverTest);
+				testsToRun.push(tests.main.modules.tests.ModuleDescriptorTest);
+				testsToRun.push(tests.main.modules.tests.PortsProxyTest);
+				return testsToRun;
+			}
+			
+			
+			private function onCreationComplete():void
+			{
+				testRunner.runWithFlexUnit4Runner(currentRunTestSuite(), "z-bbb-client");
+			}
+			
+		]]>
+	</mx:Script>
+	<flexui:FlexUnitTestRunnerUI id="testRunner" portNumber="8765">
+	</flexui:FlexUnitTestRunnerUI>
+	
+</mx:Application>
