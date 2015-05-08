@@ -684,7 +684,7 @@ with BigBlueButton; if not, see <http://www.gnu.org/licenses/>.
 		<mx:Spacer width="100%" id="spacer" />
 		<mx:Label 
 				id="lblWebRTC"
-				text="{'[ '+ResourceUtil.getInstance().getString('bbb.mainshell.notification.webrtc')+' ]'}"
+				text=""
 				visible="false"
 				includeInLayout="false" />
 		<mx:Label
@@ -705,7 +705,7 @@ with BigBlueButton; if not, see <http://www.gnu.org/licenses/>.
 		<mx:Button
 				width="20"
 				height="20"
-				visible="{layoutOptions.showLogButton}"
+				visible="false"
 				includeInLayout="{layoutOptions.showLogButton}"
 				toolTip="{ResourceUtil.getInstance().getString('bbb.mainshell.logBtn.toolTip')}"
 				id="logBtn"
